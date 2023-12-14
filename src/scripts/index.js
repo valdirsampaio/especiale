@@ -131,7 +131,7 @@ const getInstaFeed = async () => {
     return insta
 }
 
-getInstaFeed()
+// getInstaFeed()
 
 const createPost = (post) => {
     const card = document.createElement("li");

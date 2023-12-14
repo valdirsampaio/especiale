@@ -22,7 +22,7 @@
   --font-size-6: 3.5rem;
   --font-size-7: 1.25rem;
   --font-size-8: 1rem;
-  --font-size-9: 0.5rem;
+  --font-size-9: 0.7rem;
 
   --font-weight-0: 700;
   --font-weight-1: 600;
@@ -103,10 +103,11 @@ button {
 
       text-align: center;
       font-family: var(--font-family-1);
-      font-size: var(--font-size-8);
+      font-size: clamp(0.9rem, 2.5vw, var(--font-size-8));
       font-style: normal;
       font-weight: var(--font-weight-1);
       line-height: normal;
+      text-decoration: none;
 
       display: flex;
       flex-direction: row;
@@ -167,7 +168,7 @@ button {
         color: var(--color-brand-1);
         text-align: center;
         font-family: var(--font-family-3);
-        font-size: clamp(var(--font-size-6), 2.5vw, var(--font-size-0));
+        font-size: clamp(1.8rem, 2.5vw, var(--font-size-0));
         font-style: normal;
         font-weight: var(--font-weight-1);
         line-height: normal;
@@ -188,6 +189,7 @@ button {
         padding: 0.8rem 1.5rem;
         border-radius: 3.125rem;
         background-color: var(--color-black);
+        border: 1px solid var(--color-black);
         color: var(--color-white);
 
         text-align: center;
@@ -196,6 +198,7 @@ button {
         font-style: normal;
         font-weight: var(--font-weight-1);
         line-height: normal;
+        text-decoration: none;
 
         display: flex;
         flex-direction: row;
@@ -245,7 +248,7 @@ button {
       color: var(--color-brand-2);
       text-align: center;
       font-family: var(--font-family-1);
-      font-size: clamp(var(--font-size-9), 2.5vw, var(--font-size-7));
+      font-size: clamp(var(--font-size-8), 2.5vw, var(--font-size-7));
       font-style: normal;
       font-weight: var(--font-weight-1);
       line-height: normal;
@@ -258,11 +261,12 @@ button {
       flex-direction: row;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 4rem;
 
       .main__instaPost {
-        max-width: 25rem;
-        max-height: 25rem;
+        min-width: 20rem;
+        min-height: 20rem;
         border-radius: 1rem;
         overflow: hidden;
         display: flex;
@@ -270,14 +274,15 @@ button {
         align-items: flex-start;
         justify-content: flex-start;
 
+
         .main__instaPost--post {
-          width: 100%;
-          height: 25rem;
+          min-width: 100%;
+          min-height: 20rem;
           position: relative;
           border-radius: 1rem;
 
           .main__instaPost--image {
-            width: 25rem;
+            width: 20rem;
             height: auto;
             border-radius: 1rem;
 
@@ -338,12 +343,12 @@ button {
     justify-content: center;
 
     .main__secondSection--container {
-      width: 80%;
+      width: 90%;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 4rem;
+      gap: 3rem;
 
       .secondSection__jobs {
         width: 50%;
@@ -479,6 +484,7 @@ button {
           padding: 0.8rem 1.5rem;
           border-radius: 3.125rem;
           background-color: var(--color-black);
+          border: 1px solid var(--color-black);
           color: var(--color-white);
           gap: 1rem;
 
@@ -488,6 +494,7 @@ button {
           font-style: normal;
           font-weight: var(--font-weight-1);
           line-height: normal;
+          text-decoration: none;
 
           display: flex;
           flex-direction: row;
@@ -518,7 +525,7 @@ button {
 
   .main__thirdSection {
     padding: 3rem 0rem;
-    width: 80%;
+    width: 90%;
     height: auto;
     background-color: var(--color-white);
     display: flex;
@@ -532,7 +539,7 @@ button {
       color: var(--color-brand-2);
       text-align: center;
       font-family: var(--font-family-1);
-      font-size: clamp(var(--font-size-9), 2.5vw, var(--font-size-7));
+      font-size: clamp(var(--font-size-8), 2.5vw, var(--font-size-7));
       font-style: normal;
       font-weight: var(--font-weight-1);
       line-height: normal;
@@ -548,8 +555,8 @@ button {
       gap: 4rem;
 
       .main__avaliation {
-        width: 30%;
-        max-width: 25rem;
+        width: 35%;
+        max-width: 30rem;
         height: auto;
         background-color: rgba(243, 249, 255, 0.5);
         border: 5px solid rgba(243, 249, 255, 1);
@@ -584,6 +591,7 @@ button {
             gap: 0.25rem;
 
             .main__avaliation--author {
+              text-align: start;
               color: var(--color-black);
               font-family: var(--font-family-1);
               font-size: clamp(var(--font-size-9), 2.5vw, var(--font-size-8));
@@ -593,6 +601,7 @@ button {
             }
 
             .main__avaliation--date {
+              text-align: start;
               color: var(--color-brand-2);
               font-family: var(--font-family-1);
               font-size: clamp(var(--font-size-9), 2.5vw, var(--font-size-8));
@@ -639,26 +648,27 @@ button {
         background-color: var(--color-white);
         color: #000e25;
         border: 3px solid #000e25;
-  
+
         text-align: center;
         font-family: var(--font-family-1);
         font-size: 1.25rem;
         font-style: normal;
         font-weight: var(--font-weight-1);
         line-height: normal;
-  
+        text-decoration: none;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-  
+
         &:hover {
           color: var(--color-white);
           background-color: #000e25;
           border: 3px solid #000e25;
         }
-  
+
         &:focus {
           color: var(--color-white);
           background-color: #000e25;
@@ -672,26 +682,27 @@ button {
         background-color: var(--color-brand-1);
         color: var(--color-white);
         border: 3px solid var(--color-brand-1);
-  
+
         text-align: center;
         font-family: var(--font-family-1);
         font-size: 1.25rem;
         font-style: normal;
         font-weight: var(--font-weight-1);
         line-height: normal;
-  
+        text-decoration: none;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-  
+
         &:hover {
           color: var(--color-white);
           background-color: #000e25;
           border: 3px solid #000e25;
         }
-  
+
         &:focus {
           color: var(--color-white);
           background-color: #000e25;
@@ -716,7 +727,7 @@ button {
 
 
   .footer__area--container {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -737,26 +748,27 @@ button {
         background-color: #000e25;
         color: var(--color-white);
         border: 3px solid var(--color-white);
-  
+
         text-align: center;
         font-family: var(--font-family-1);
         font-size: 1.25rem;
         font-style: normal;
         font-weight: var(--font-weight-1);
         line-height: normal;
-  
+        text-decoration: none;
+
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-  
+
         &:hover {
           color: var(--color-black);
           background-color: var(--color-white);
           border: 3px solid var(--color-white);
         }
-  
+
         &:focus {
           color: var(--color-black);
           background-color: var(--color-white);
@@ -787,7 +799,7 @@ button {
   }
 
   .rights__area {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
 
@@ -798,5 +810,183 @@ button {
     font-style: normal;
     font-weight: var(--font-weight-2);
     line-height: normal;
+  }
+}
+
+@media (max-width: 1080px) {
+
+  .main__area {
+    .main__secondSection {
+      width: 100%;
+
+      .main__secondSection--container {
+        width: 80%;
+        flex-direction: column;
+
+        .secondSection__jobs {
+          width: 90%;
+
+          .secondSection__jobs--header {
+            .secondSection__jobs--img {
+              width: 5rem;
+              height: auto;
+            }
+          }
+
+          .secondSection__jobs--main {
+            gap: 2.5rem;
+          }
+        }
+
+        .secondSection__week {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navegation__area {
+    width: 100%;
+    min-width: 24.375rem;
+
+    .navegation__container {
+      width: 87.7%;
+
+      .navegation__brand {
+        .navegation__logo {
+          width: 3rem;
+          height: auto;
+        }
+
+        .navegation__title {
+          font-size: 1.2rem;
+        }
+      }
+
+      .navegation__button {
+        font-size: 0.9rem;
+
+        .navegation__whatsIcon {
+          width: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .header__area {
+    width: 100%;
+    min-width: 24.375rem;
+
+    .header__container {
+      width: 87.7%;
+
+      .header__info {
+        .header__title {
+          font-size: 1.8rem;
+        }
+
+        .header__paragraph {
+          font-size: var(--font-size-9);
+        }
+
+        .header__button {
+          padding: 0.6rem 1.3rem;
+          font-size: var(--font-size-9);
+        }
+      }
+
+      .header__img {
+        width: 40%;
+      }
+    }
+  }
+
+  .main__area {
+    width: 100%;
+    min-width: 24.375rem;
+
+    .main__firstSection {
+      width: 87.7%;
+
+      .main__firstSection--title {
+        font-size: var(--font-size-8);
+
+      }
+
+      .main__firstSection--list {
+        flex-direction: column;
+
+        .main__instaPost {
+          width: 20rem;
+          height: 20rem;
+
+          .main__instaPost--post {
+            height: 20rem;
+
+            .main__instaPost--image {
+              width: 20rem;
+            }
+          }
+        }
+      }
+    }
+
+    .main__thirdSection {
+      width: 87.7%;
+
+      .main__thirdSection--title {
+        font-size: var(--font-size-8);
+      }
+
+      .main__thirdSection--list {
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+
+        .main__avaliation {
+          width: 100%;
+        }
+      }
+
+      .main__thirdSection--buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .main__thirdSection--write {
+          font-size: 1rem;
+        }
+
+        .main__thirdSection--more {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .footer__area {
+    width: 100%;
+    min-width: 24.375rem;
+
+    .footer__area--container {
+      width: 87.7%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      .footer__contact {
+        .footer__contact--button {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .rights__area {
+      width: 87.7%;
+    }
   }
 }
