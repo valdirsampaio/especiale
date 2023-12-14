@@ -168,7 +168,7 @@ button {
         color: var(--color-brand-1);
         text-align: center;
         font-family: var(--font-family-3);
-        font-size: clamp(1.8rem, 2.5vw, var(--font-size-0));
+        font-size: clamp(1.3rem, 2.5vw, var(--font-size-0));
         font-style: normal;
         font-weight: var(--font-weight-1);
         line-height: normal;
@@ -895,7 +895,7 @@ button {
 
       .header__info {
         .header__title {
-          font-size: 1.8rem;
+          font-size: 1.3rem;
         }
 
         .header__paragraph {
