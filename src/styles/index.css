@@ -796,6 +796,16 @@ button {
         line-height: normal;
       }
     }
+
+    .footer__maps {
+      display: flex;
+      flex-direction: flex-end;
+
+      iframe {
+        width: 400px;
+        height: 300px; 
+      }
+    }
   }
 
   .rights__area {
@@ -981,6 +991,14 @@ button {
       .footer__contact {
         .footer__contact--button {
           font-size: 1rem;
+        }
+      }
+
+      .footer__maps {
+        width: 90%;
+        flex-direction: flex-start;
+        iframe {
+          width: 100%;
         }
       }
     }
